@@ -1,0 +1,1058 @@
+/* ======================================
+   BASIC SETTINGS
+====================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #172033;
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.navbar {
+    width: 100%;
+
+    padding: 15px 6%;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.college-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo-circle {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #173b8f,
+        #2878e3
+    );
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.college-logo h2 {
+    font-size: 20px;
+
+    color: #173b8f;
+}
+
+.college-logo span {
+    font-size: 11px;
+
+    color: #777;
+}
+
+.navbar nav {
+    display: flex;
+
+    gap: 22px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+
+    color: #555;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #1769d1;
+}
+
+
+/* ======================================
+   HERO
+====================================== */
+
+.hero {
+    min-height: 650px;
+
+    padding: 90px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(39, 115, 222, 0.15),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #eef5ff,
+            #ffffff
+        );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-label {
+    color: #1769d1;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 78px);
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #1769d1;
+}
+
+.hero p {
+    color: #667085;
+
+    font-size: 17px;
+
+    max-width: 650px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background: #1769d1;
+
+    color: white;
+}
+
+.primary:hover {
+    background: #0e4fa8;
+
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid #1769d1;
+
+    color: #1769d1;
+}
+
+.secondary:hover {
+    background: #1769d1;
+
+    color: white;
+}
+
+
+/* ======================================
+   HERO CARD
+====================================== */
+
+.hero-card {
+    width: 330px;
+
+    min-height: 350px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 70px rgba(23, 105, 209, 0.15);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.card-glow {
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    background: #2878e3;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: 0.15;
+
+    top: -70px;
+
+    right: -50px;
+}
+
+.graduation-icon {
+    font-size: 80px;
+
+    margin: 50px 0 20px;
+}
+
+.hero-card h3 {
+    font-size: 22px;
+}
+
+.hero-card p {
+    margin-top: 10px;
+
+    color: #777;
+}
+
+
+/* ======================================
+   STATISTICS
+====================================== */
+
+.statistics {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: -45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+.stat-card {
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h2 {
+    color: #1769d1;
+
+    font-size: 32px;
+}
+
+.stat-card p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ======================================
+   COMMON SECTION
+====================================== */
+
+.section {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading > span {
+    color: #1769d1;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+
+    margin: 10px 0;
+}
+
+.section-heading strong {
+    color: #1769d1;
+}
+
+.section-heading p {
+    color: #777;
+
+    max-width: 650px;
+}
+
+
+/* ======================================
+   COMPANY CARDS
+====================================== */
+
+.company-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.company-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #e7eaf0;
+
+    transition: 0.3s;
+}
+
+.company-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #2878e3;
+
+    box-shadow:
+        0 15px 35px rgba(23, 105, 209, 0.1);
+}
+
+.company-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.company-card h3 {
+    margin-bottom: 10px;
+}
+
+.company-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.company-tag {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 5px 10px;
+
+    background: #edf5ff;
+
+    color: #1769d1;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+
+/* ======================================
+   DARK COE SECTION
+====================================== */
+
+.dark-section {
+    width: 100%;
+
+    max-width: none;
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+    background: #0c1628;
+
+    color: white;
+}
+
+.dark-section .section-heading p {
+    color: #9aa7ba;
+}
+
+.dark-section .section-heading > span {
+    color: #54a2ff;
+}
+
+.coe-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.coe-card {
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.coe-card:hover {
+    transform: translateY(-8px);
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-color: #54a2ff;
+}
+
+.coe-number {
+    color: #54a2ff;
+
+    font-size: 12px;
+
+    margin-bottom: 20px;
+}
+
+.coe-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.coe-card h3 {
+    margin-bottom: 10px;
+}
+
+.coe-card p {
+    color: #9aa7ba;
+
+    font-size: 13px;
+
+    min-height: 75px;
+}
+
+.coe-card span {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #54d99b;
+
+    font-size: 11px;
+}
+
+
+/* ======================================
+   INTERNSHIPS
+====================================== */
+
+.internship-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.internship-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e6e9ef;
+
+    transition: 0.3s;
+}
+
+.internship-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.internship-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #1769d1;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.open {
+    color: #15945b;
+}
+
+.internship-card h3 {
+    margin: 25px 0 10px;
+
+    font-size: 24px;
+}
+
+.internship-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.internship-details {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 25px;
+}
+
+.internship-details span {
+    padding: 6px 9px;
+
+    background: #f1f5fa;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+
+/* ======================================
+   FORM
+====================================== */
+
+.form-section {
+    background: #eef5ff;
+
+    max-width: none;
+
+    width: 100%;
+
+    padding-left: 8%;
+
+    padding-right: 8%;
+}
+
+.form-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #344054;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1769d1;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 105, 209, 0.08);
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1769d1;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #0e4fa8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ======================================
+   CREDENTIAL BOX
+====================================== */
+
+.credential-box {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: #effbf5;
+
+    border: 1px solid #b8ead0;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-icon {
+    width: 55px;
+
+    height: 55px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #1aa36f;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+.credential-box h3 {
+    margin-top: 15px;
+}
+
+.credential-box p {
+    color: #667085;
+}
+
+.credential {
+    max-width: 500px;
+
+    margin: 12px auto;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+.credential span {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.credential strong {
+    color: #1769d1;
+}
+
+.credential-warning {
+    margin: 20px 0;
+}
+
+
+/* ======================================
+   LOGIN
+====================================== */
+
+.login-section {
+    background: white;
+}
+
+.login-container {
+    max-width: 550px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    background: #f7f9fc;
+
+    border: 1px solid #e4e8ef;
+}
+
+.dashboard {
+    margin-top: 25px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #dce3ed;
+}
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.dashboard-header span {
+    color: #1769d1;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+#logoutBtn {
+    padding: 8px 15px;
+
+    border: 1px solid #1769d1;
+
+    color: #1769d1;
+
+    background: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.dashboard h2 {
+    margin-bottom: 25px;
+}
+
+.dashboard h2 span {
+    color: #1769d1;
+}
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+.dashboard-grid div {
+    padding: 15px;
+
+    background: #f5f8fc;
+
+    border-radius: 10px;
+}
+
+.dashboard-grid small {
+    display: block;
+
+    color: #777;
+
+    margin-bottom: 5px;
+}
+
+.dashboard-grid strong {
+    color: #172033;
+
+    font-size: 14px;
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer {
+    padding: 40px 8%;
+
+    background: #0c1628;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+footer p {
+    color: #9aa7ba;
+
+    font-size: 13px;
+}
+
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media (max-width: 1000px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 70px;
+    }
+
+    .hero p {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .company-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .internship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .statistics {
+        width: 90%;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .company-grid,
+    .coe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 25px 18px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .credential {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
